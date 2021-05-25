@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>NEW USER</title>
+        <link rel="icon" href="myicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #outer {
+            border: 1px solid black;
+            margin: 1% 25%;
+        }
+
+        #logid {
+            border: 1px solid black;
+            margin: 0.5%;
+            padding: 1%;
+        }
+
+        #form {
+            border: 1px solid black;
+            margin: 2%;
+            padding: 2%;
+            background-color: white;
+        }
+
+        #pd, #cd, #ld {
+            padding: 2% 8%;
+        }
+
+        #s {
+            width: 30%;
+            margin: 1% 36%;
+        }
+        
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=date], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: slategray;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <div id="outer">
+        <div id="form">
+            <h1>CREATE NEW USER</h1>
+            <form action="create" method="post" align: center><br>
+                <fieldset id="pd">
+                    <legend>Personal Details</legend><br>
+                    FIRST NAME <input type="text" name="fn" required>
+                    LAST NAME <input type="text" name="ln" required>
+                    AGE <input type="number" name="age" required>
+                    DATE OF BIRTH <input type="date" name="dob" required>
+                </fieldset><br>
+                <fieldset id="cd">
+                    <legend>Contact Details</legend><br>
+                    EMAIL <input type="text" name="email" required>
+                    PHONE NUMBER <input type="text" name="pno" required>
+                    ADDRESS <input type="text" name="a1" placeholder="street" required>
+                    <input type="text" name="a2" placeholder="city, state" required>
+                    <input type="number" name="a3" placeholder="postal code" required>
+                </fieldset><br>
+                <fieldset id="ld">
+                    <legend>Login Details</legend><br>
+                    USERNAME <input type="text" name="username" required>
+                    PASSWORD <input type="password" name="pass" required>
+                </fieldset><br>
+                <input type="submit" value="SUBMIT" id="s"><br>
+            </form>
+        </div>
+    </div>
+</html>
